@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---- really hope you aint stealing stuff i alr stole /j  ---->
+    <link rel="shortcut icon" id="favicon" href="realclassroomfavicon.png" type="image/png">
+    <style>
+      body {
+        background-color: #330050; 
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; 
+        overflow: hidden; 
+        position: relative;
+        font-family: 'Source Sans Pro', sans-serif;
+      }
+
+      header {
+            background-color: #330050; 
+            color: white;
+            outline: #2e2e2e;
+            width: 100%;
+            padding: 15px; 
+            text-align: center; 
+            position: absolute; 
+            top: 0; 
+            z-index: 2;
+            border-bottom: 3px solid #acacac;
+            box-shadow: 0 0 15px 2px rgba(104, 104, 104, 0.5);
+        }
+
+    .header2-right {
+      float: right;
+      transition: 0.2s;
+    } 
+
+    .header2-left {
+      float: left;
+      margin-left: 15px;
+    }
+
+    a {
+      margin: 0;
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  color: white;
+  transition: 0.3s;
+    }
+
+    a:hover {
+      background-color: #30003f;
+  color: rgb(95, 95, 95);
+  cursor: pointer;
+  transition: 0.3;
+    }
+
+      .fade-in {
+        opacity: 0; 
+        animation: fadeIn 2s forwards; 
+        position: relative;
+        z-index: 1; 
+        color: white; 
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1; 
+        }
+      }
+
+      .snowflake {
+        position: absolute;
+        top: -10px;
+        background: white;
+        opacity: 0.8;
+        border-radius: 50%;
+        pointer-events: none;
+        animation: fall linear infinite; 
+      }
+
+      button {
+        margin-top: 10px;
+        width: 200px;
+        height: 40px;
+        background-color: #3e3e3e;
+        border: none;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1em;
+        color: white;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+      }
+
+      button:hover {
+        background-color: #1e1e1e;
+        color: rgba(255, 255, 255, 0.534);
+        scale: 1;
+      }
+
+      @keyframes fall {
+        to {
+          transform: translateY(100vh); 
+        }
+      }
+
+      @keyframes colors {
+        to {
+          color: #30003f;
+        }
+      }
+
+      h1 {
+        background: linear-gradient(180deg, #30003f, white);
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            background-clip: text;
+            color: transparent;
+            animation: fade 3s infinite alternate; 
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header2-right">
+        <a href="pages/proxy.html">Apps</a>
+        <a href="https://github.com/nexusrealityz">Github</a>
+        <a href="pages/setting.html">Settings</a>
+      </div>
+      <div class="header2-left">
+        <h1>Nexus's Google Classroom -</h1>
+      </div>
+    </header>
+    <div class="fade-in">
+      <h1 style="text-align: center">Nexus's Google Classroom</h1>
+      <p id="splash" style="text-align: center;"></p>
+      <h4 id="temp" style="margin-top: 20px; text-align: center;">brought to you by a student of MTMS who's bored out of his head</h2>
+      <a id="emergencyButton" href="https://classroom.google.com/">Emergency (Classroom)</a>
+      <a id="emergencyButton" href="https://clever.com/">Emergency (Clever)</a>
+      <a onclick="tabcloak()">Tab Cloak</a>
+      <a onclick="openInBlank()">Open in Blank Tab</a>
+    </div>
+
+    <script>
+      // ooh its christmas time WOW
+      const christmasflake = () => {
+        const snowflake = document.createElement("div");
+        snowflake.className = "snowflake";
+        const size = Math.random() * 5 + 2;
+        snowflake.style.width = `${size}px`;
+        snowflake.style.height = `${size}px`;
+        snowflake.style.left = `${Math.random() * 100}vw`;
+        snowflake.style.animationDuration = `${Math.random() * 3 + 2}s`;
+        snowflake.style.animationDelay = `${Math.random() * 5}s`;
+        document.body.appendChild(snowflake);
+
+        setTimeout(() => {
+          snowflake.remove();
+        }, 8000);
+      };
+
+      setInterval(christmasflake, 100);
+
+      // eventually gonna make some better tab cloak but im trash at coding
+      // my school is an idiot for not blocking vs code on web :laugh:
+      // is vscode.dev better than codesandbox?? probably because csb sites have the Open Sandbox button.
+      function tabcloak() {
+        document.title = "Home";
+      }
+      // messages for the splash text
+      // most of these messages are related to me and my friends, so if your from
+      // somewhere else you may not understand these lmao
+      const messages = [
+        "ryan please get off my site before it gets blocked and i have to make another one",
+        "landon, austin, xavier, and bennett are my top g's",
+        "Brendan has a big forehead",
+        "go ahead call me to the office",
+        "does this website getting blocked affect Lebron's legacy?",
+        "carter i got the proxy working im gonna add it here in a bit",
+        "deciding to make this non password protected",
+        "bennett your switch and cherry sidekick thingy was not that good",
+        "the talk tuah podcast is pretty good if you think about it",
+        "thanks codesandbox for automatically installing prettier <3",
+        "guys chatgpt also made this website a bit reel",
+        "how much tuah could a hawk hawk tuah if a hawk tuah could hawk tuah",
+        "if your the MTMS sniped page please respond so i can send you an image",
+        "🤧🫲 (austin you get this)",
+        "changed website name from NovaSH to Nexus's Google Classroom",
+        "ambatakum",
+        "why is this csb project linked to my old github account??",
+        "sorry Mr. Hale for exploding a pack of sour cream at the lunch table",
+        "Ms. Braun overreacted when i painted austin's arm and he painted mine",
+        "so my school is more worried about my friend causing trouble then me exploiting blocksi ok i get it",
+        "chatgpt, how do i get a document element by its id? oh, its document.getElementById(); thanks",
+        "lucas, why did you copy my ChatRoom doc idea? now good luck copying the website for it.. wink wink",
+        "HAWK TUAH",
+        "FROM THE SCREEN TO THE RING TO THE PEN TO THE KING WHERES MY CROWN THATS MY BLING ALWAYS TROUBLE WHEN I RING!",
+        "To Ryan, PLS DO NOT USE THIS IN CLASS -Carter",
+        "FEIN FEIN FEIN FEIN FIEN FIEN",
+        "Abra abra kadabra im gonna reach out and grab ya",
+        "GET OUT (Not really, unless your Ryan)",
+        "AHHHHH I ATE TACO BELL, BAD IDEA",
+        "ITS THE SPOKY MOTH -Beaver",
+        "MEOW MEOW MEOW MEOW"
+      ];
+
+      function roulettemessages() {
+        const rand = Math.floor(Math.random() * messages.length);
+        return messages[rand];
+      }
+      document.getElementById("splash").innerText = roulettemessages();
+
+      function openInBlank() {
+        alert("when in the blank, do not refresh or it will remove the iframe");
+        setTimeout(() => {
+          
+        }, 4000);
+        var win = window.open('about:blank', '_blank');
+        var iframe = win.document.createElement('iframe');
+        iframe.style.position = 'fixed';
+        iframe.style.top = 0;
+        iframe.style.bottom = 0;
+        iframe.style.left = 0;
+        iframe.style.right = 0;
+        iframe.style.border = 'none';
+        iframe.style.outline = 'none';
+        iframe.style.width = '100%';
+        iframe.style.height = '100%';
+        iframe.src = 'https://rc8cfl.csb.app/';
+        win.document.body.appendChild(iframe);
+        var button = win.document.createElement('button');
+        document.getElementById('button').onclick = goback()
+      }
+      function goback() {
+        window.open('https://rc8cfl.csb.app');
+      }
+    </script>
+  </body>
+</html>
