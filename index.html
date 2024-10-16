@@ -7,7 +7,7 @@
     <link rel="shortcut icon" id="favicon" href="realclassroomfavicon.png" type="image/png">
     <style>
       body {
-        background-color: #330050; 
+        background-color: #500000; 
         margin: 0;
         display: flex;
         justify-content: center;
@@ -19,7 +19,7 @@
       }
 
       header {
-            background-color: #330050; 
+            background-color: #500000; 
             color: white;
             outline: #2e2e2e;
             width: 100%;
@@ -56,7 +56,7 @@
     }
 
     a:hover {
-      background-color: #30003f;
+      background-color: #3f0000;
   color: rgb(95, 95, 95);
   cursor: pointer;
   transition: 0.3;
@@ -119,12 +119,12 @@
 
       @keyframes colors {
         to {
-          color: #30003f;
+          color: #3f0000;
         }
       }
 
       h1 {
-        background: linear-gradient(180deg, #30003f, white);
+        background: linear-gradient(180deg, #3f0000, white);
             -webkit-background-clip: text; 
             -webkit-text-fill-color: transparent; 
             background-clip: text;
@@ -139,20 +139,24 @@
     <header>
       <div class="header2-right">
         <a href="pages/proxy.html">Apps</a>
-        <a href="https://github.com/nexusrealityz">Github</a>
+        <a href="https://github.com/Snakecodr11">Github</a>
+        <a href="https://rc8cfl.csb.app">Original Website</a>
         <a href="pages/setting.html">Settings</a>
       </div>
       <div class="header2-left">
-        <h1>Nexus's Google Classroom -</h1>
+        <h1>Snakegamr's Google Classroom -</h1>
       </div>
     </header>
     <div class="fade-in">
-      <h1 style="text-align: center">Nexus's Google Classroom</h1>
+      <h1 style="text-align: center">Snakegamr's Google Classroom</h1>
       <p id="splash" style="text-align: center;"></p>
-      <h4 id="temp" style="margin-top: 20px; text-align: center;">brought to you by a student of MTMS who's bored out of his head</h2>
+      <h4 id="temp" style="margin-top: 20px; text-align: center;">Copied from the original owner and Brought to you by the legendary Snakegamr1210</h2>
+      <h4 id="temp" style="margin-top: 20px; text-align: center;">No allow list:Ryan, Aaron, Greyson T, Gabe, Bennet, and Jameson.</h2>
+      <h4 style="text-align: center;">Created with the NGC Source</h4>
       <a id="emergencyButton" href="https://classroom.google.com/">Emergency (Classroom)</a>
       <a id="emergencyButton" href="https://clever.com/">Emergency (Clever)</a>
-      <a onclick="tabcloak()">Tab Cloak</a>
+      <a onclick="tabcloak()">Tab Cloak (Classroom)</a>
+      <a onclick="tabcloakclever()">Tab Cloak (Clever)</a>
       <a onclick="openInBlank()">Open in Blank Tab</a>
     </div>
 
@@ -187,24 +191,24 @@
       // somewhere else you may not understand these lmao
       const messages = [
         "ryan please get off my site before it gets blocked and i have to make another one",
-        "landon, austin, xavier, and bennett are my top g's",
+        "As you can see this is an unfinished project",
         "Brendan has a big forehead",
         "go ahead call me to the office",
         "does this website getting blocked affect Lebron's legacy?",
         "carter i got the proxy working im gonna add it here in a bit",
-        "deciding to make this non password protected",
-        "bennett your switch and cherry sidekick thingy was not that good",
+        "What if Bradley got that low taper fade?",
+        "Micah go get your own cookie",
         "the talk tuah podcast is pretty good if you think about it",
         "thanks codesandbox for automatically installing prettier <3",
         "guys chatgpt also made this website a bit reel",
         "how much tuah could a hawk hawk tuah if a hawk tuah could hawk tuah",
         "if your the MTMS sniped page please respond so i can send you an image",
-        "🤧🫲 (austin you get this)",
-        "changed website name from NovaSH to Nexus's Google Classroom",
+        "turn your volume up and click this url https://www.youtube.com/watch?v=0itOCgJtNVU",
+        "changed website name from NovaSH to Snakegamr's Google Classroom",
         "ambatakum",
         "why is this csb project linked to my old github account??",
-        "sorry Mr. Hale for exploding a pack of sour cream at the lunch table",
-        "Ms. Braun overreacted when i painted austin's arm and he painted mine",
+        "PICK UP YOUR PHONE YOUR PHONE IS RINGING!",
+        "Ms. Fezzat overreated when I couldn't name five examples of public goods.",
         "so my school is more worried about my friend causing trouble then me exploiting blocksi ok i get it",
         "chatgpt, how do i get a document element by its id? oh, its document.getElementById(); thanks",
         "lucas, why did you copy my ChatRoom doc idea? now good luck copying the website for it.. wink wink",
@@ -215,8 +219,11 @@
         "Abra abra kadabra im gonna reach out and grab ya",
         "GET OUT (Not really, unless your Ryan)",
         "AHHHHH I ATE TACO BELL, BAD IDEA",
-        "ITS THE SPOKY MOTH -Beaver",
-        "MEOW MEOW MEOW MEOW"
+        "ITS THE SPOOKY MONTH -Beaver",
+        "MEOW MEOW MEOW MEOW",
+        "james was here (maybe, maybe not)",
+        "carter is a top g and will forever be",
+        "our new temporary bus driver is slower than gabriel",
       ];
 
       function roulettemessages() {
@@ -241,14 +248,33 @@
         iframe.style.outline = 'none';
         iframe.style.width = '100%';
         iframe.style.height = '100%';
-        iframe.src = 'https://rc8cfl.csb.app/';
+        iframe.src = 'https://cgl4py-5000.csb.app/';
         win.document.body.appendChild(iframe);
         var button = win.document.createElement('button');
         document.getElementById('button').onclick = goback()
       }
       function goback() {
-        window.open('https://rc8cfl.csb.app');
+        window.open('https://cgl4py-5000.csb.app/');
       }
+
+      function tabcloak() {
+        document.title = "Home";
+        changeFavicon('realclassroomfavicon.png');
+      }
+
+      function tabcloakclever() {
+        document.title = "Clever | Log in";
+        changeFavicon('realcleverfavicon.png');
+      }
+
+      function resetcloak() {
+        document.title = "Nexus's Google Classroom";
+        changeFavicon('ngc.png');
+      }
+      function changeFavicon(url) {
+    const link = document.getElementById('favicon');
+    link.href = url;
+}
     </script>
   </body>
 </html>
